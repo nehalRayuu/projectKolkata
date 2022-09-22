@@ -13,7 +13,7 @@
     <title>ADVENTURE</title>
 </head>
 <body>
-    
+    <div class=" .main-container">
     <header >
         <div class="header-content">
         <h2> Explore West Bengal</h2>
@@ -30,13 +30,13 @@
         </div>
         <div class="row">
             <div class="col">
-                <img  style="height:200px; width:300px;" src="/img/sakuntala-santiniketan-1-cropped1-1536655853.jpg" alt="" srcset="">
+                <img  style="height:200px; width:300px;" src="img/sakuntala-santiniketan-1-cropped1-1536655853.jpg" alt="" srcset="">
                 <h4>Santiniketan Mela</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quaerat voluptatibus velit, nisi, voluptas earum ut iure temporibus nostrum doloribus totam quo excepturi quidem dolorum? Officiis saepe soluta eum harum?</p>
                  <a href="#" class="ctn">Learn More</a>
             </div>
             <div class="col">
-                <img style="height:200px; width:300px;" src="/img/Untitled-design-8-4.webp" alt="" srcset="">
+                <img style="height:200px; width:300px;" src="img/Untitled-design-8-4.webp" alt="" srcset="">
                 <h4>Santiniketan Culture</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quaerat voluptatibus velit, nisi, voluptas earum ut iure temporibus nostrum doloribus totam quo excepturi quidem dolorum? Officiis saepe soluta eum harum?</p>
                 <a href="#" class="ctn">Learn More</a>
@@ -49,7 +49,7 @@
     <div class="explore-content">
        <h1>EXPLORE WEST BENGAL</h1>
        <div class="line"></div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, laboriosam. Tempore assumenda minima error corporis autem. Voluptates illo maxime nisi reprehenderit itaque laborum corrupti, soluta veritatis velit quo esse optio.</p>
+       <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, laboriosam. Tempore assumenda minima error corporis autem. Voluptates illo maxime nisi reprehenderit itaque laborum corrupti, soluta veritatis velit quo esse optio.</p>
          <a href="#" class="ctn">Learn More</a>
     </div>
    </section>
@@ -57,42 +57,53 @@
     <div class="row">
         <div class="col content-col">
             <h1>UPCOMING TOURS</h1>
-            <div class="line"></div>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor atque magnam? Unde veritatis esse praesentium aspernatur quae aut repellat facilis similique quam, at molestias fugiat numquam corrupti sunt expedita!</P>
+            <div class="line tourline"></div>
+            <P class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor atque magnam? Unde veritatis esse praesentium aspernatur quae aut repellat facilis similique quam, at molestias fugiat numquam corrupti sunt expedita!</P>
            <a href="#" class="ctn">Learn More</a>
         </div>
         <div class="col image-col">
             <div class="image-gallery">
-                <img class="img-g" src="/img/education_20191021.jpg" alt="">
-                <img  class="img-g" src="/img/Victoria-Memorial.webp" alt="">
-                <img  class="img-g" src="/img/1117.webp" alt="">
-                <img  class="img-g" src="/img/006730a81b2123e35e207dd7cd9b3176_w600_h500_cp_sc.jpg" alt="" srcset="">
+                <img class="img-g" src="img/education_20191021.jpg" alt="">
+                <img  class="img-g" src="img/Victoria-Memorial.webp" alt="">
+                <img  class="img-g" src="img/1117.webp" alt="">
+                <img  class="img-g" src="img/006730a81b2123e35e207dd7cd9b3176_w600_h500_cp_sc.jpg" alt="" srcset="">
             </div>
         </div>
     </div>
   </section>
   <section class="contact-form">
-    <div class="main">
-        <div class="register">
-    <h2>Register Here</h2>
-   <form action="#" id="register">
-       <label for="fname">Name : </label>
-       <input type="text" name="fname" id="name" placeholder="Enter Your Name"><br>
-       <br>
-       <label for="Phone">Phone :</label>
-       <input type="number" name="number" placeholder="Enter Your Phone no " id="name">
-       <br><br>
-
-       <label for="email">Email :</label>
+    <div class="container">
+        <form id="form" class="form">
+          <h2>Register With Us</h2>
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Enter password again" />
+            <small>Error Message</small>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
        
-       <input type="email" name="email" id="name" placeholder="Enter Your Email">
-       <br><br>
-       
-       <input  type="button" value="Submit" name="submit" id="submit">
-   </form>
+    
   
-</div>
-</div>
+  
+
+
 
   </section>
     
@@ -101,6 +112,8 @@
     <p> Kolkata 700016,Talata | phone:89522255 | email:contact@gmail.com</p>
     <p>Copyright © 2020 Outdoor Adventure</p>
   </section>
+</div>
+<script src="script.js"></script>
 
 </body>
 </html>
